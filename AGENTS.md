@@ -8,6 +8,7 @@ RULES:
 - Before material change: read relevant authority; map change to `TLR-*`; flag ambiguity/gaps.
 - Label evidence: `ASSUMPTION|ESTIMATE|SIMULATION|MEASUREMENT`; never claim unrun/unbuilt/simulated work is validated hardware behavior.
 - Flight/power/propulsion/RF/control/autonomy changes: define validation and staged test path before escalation claims.
+- Files created expressly for future GPT instances: optimize for agent parsing and token efficiency; human readability is not a goal.
 - Preserve unrelated work; make minimal coherent changes; do not commit secrets, machine-local config, generated artifacts, or raw logs unless explicitly intended.
 - Parallel: non-overlapping paths; integration reports interfaces, assumptions, TLRs, evidence, risks; durable cross-system decisions go in `docs/decisions/`.
 
