@@ -1,0 +1,6 @@
+# Office lock files
+~$*
+
+# Artifact-generation work files
+/outputs/**/work/
+/outputs/**/*.inspect.ndjson
