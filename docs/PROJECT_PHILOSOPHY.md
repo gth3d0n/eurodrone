@@ -1,5 +1,0 @@
-- Target a 100 km/h quadcopter to learn electronics, mechanics, RF, and control together.
-- Design our own FC, PDU, structure, and harnesses; reuse proven components and open-source firmware.
-- Optimise feasible trajectories offline; track them onboard with feedback and control margin.
-- Collaborate with AI while understanding our designs; keep room for FPGA and positioning experiments.
-- Earn speed and reliable autonomy through staged testing and measured models; adapt ambition to available test space.

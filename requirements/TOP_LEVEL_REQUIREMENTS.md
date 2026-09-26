@@ -1,14 +1,15 @@
 # Eurodrone Top-Level Requirements
 
-FORMAT: `ID|DOMAIN|NORMATIVE REQUIREMENT`
+FORMAT: `ID|SCOPE|DOMAIN|NORMATIVE REQUIREMENT`
 KEYWORDS: `SHALL`=mandatory; `SHOULD`=preferred; `MAY`=optional.
-SCOPE: outcome-level only; derive measurable subsystem requirements and acceptance tests from each ID.
+SCOPE: outcome-level only; derive measurable subsystem requirements and acceptance criteria from each ID. `I1`=active for iteration 1; `FUTURE`=deferred beyond iteration 1, excluded from its acceptance, with no committed delivery date.
+LEARNING: electronics, mechanics, RF integration, and feedback control through custom core hardware, component characterization, integration, tuning, and measured tests.
+STATUS: requirements baseline; no measured aircraft performance is recorded in this repository.
 
-TLR-01|performance|Aircraft SHALL be a quadcopter designed for maximum forward airspeed of 100 km/h in an appropriate legal test environment.
-TLR-02|architecture|Project SHALL design and document its FC, PDU, primary structure, and electrical harnesses.
-TLR-03|architecture|Project SHALL prefer proven commercial components and mature open-source firmware where this reduces avoidable risk or effort.
-TLR-04|planning|System SHALL support offline optimization of feasible trajectories constrained by aircraft, control, and test-site conditions.
-TLR-05|control|Aircraft SHALL track planned trajectories onboard using closed-loop feedback and defined control margin.
-TLR-06|extensibility|Architecture SHALL provide practical integration paths for future FPGA and positioning-system experiments.
-TLR-07|validation|Capability development SHALL use staged tests; measured models SHALL inform subsequent designs and tests.
-TLR-08|operations|Planned speed, trajectory complexity, and autonomy level SHALL be constrained by available test space and operating conditions.
+TLR-01|I1|performance|Aircraft SHALL be designed to achieve at least 300 km/h forward airspeed in repeatable, approximately level powered flight in an appropriate legal test environment. Performance beyond 300 km/h SHALL be pursued as evidence permits.
+TLR-02|I1|architecture|Project SHALL design and document its FC, PDU, primary structure, and electrical harnesses.
+TLR-03|I1|architecture|Project SHALL prefer proven commercial off-the-shelf (COTS) components and mature open-source flight firmware where this preserves learning objectives and reduces avoidable risk or effort; the custom hardware commitments in TLR-02 SHALL be retained.
+TLR-04|FUTURE|planning|System SHALL support offline optimization of feasible trajectories constrained by aircraft, control, and test-site conditions.
+TLR-05|FUTURE|control|Aircraft SHALL track planned trajectories onboard using closed-loop feedback and defined control margin.
+TLR-06|I1|extensibility|Flight computing board SHALL integrate an FPGA and provide practical integration paths for future acceleration workloads, including CPU-FPGA communication bandwidth sufficient for the anticipated workloads. Architecture SHALL provide practical integration paths for future positioning-system experiments.
+TLR-07|I1|control|Aircraft SHALL support piloted FPV operation through a pilot command link and onboard camera/video link, with onboard closed-loop stabilization and defined control margin.
